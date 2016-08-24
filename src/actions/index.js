@@ -20,3 +20,11 @@ export function fetchPosts (subreddit) {
       })
   }
 }
+
+export const addPost = (post) => {
+  return {
+    type: 'ADD_POST',
+    id: nextPostId++,
+    post
+  }
+}
